@@ -491,7 +491,7 @@ if (Name === 'Menu auto recognition') {
 
     // Get background color value
     function getColorValue(e) {
-        let rgbValueArry = window.getComputedStyle(e).backgroundColor.replace(/Rgba|rgb|\(|\)| /G, '').split (',')
+        let rgbValueArry = window.getComputedStyle(e).backgroundColor.replace(/rgba|rgb|\(|\)| /g, '').split (',')
         return parseInt(rgbValueArry[0] + rgbValueArry[1] + rgbValueArry[2])
     }
 
